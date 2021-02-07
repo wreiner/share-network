@@ -2,6 +2,11 @@
 
 Share a network connection through Wifi.
 
+## Usage
+
+1. Set SSID and WPA PSK in hostapd.conf
+1. Run share-network.sh
+
 ## Unmanage device by NetworkManager
 
 Add the device to /etc/NetworkManager/conf.d/unmanaged.conf:
