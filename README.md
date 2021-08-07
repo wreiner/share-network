@@ -26,10 +26,22 @@ Device should now be unmanaged:
 
 ```
 # nmcli d
-DEVICE             TYPE      STATE         CONNECTION     
+DEVICE             TYPE      STATE         CONNECTION
 ...
-wlp3s0             wifi      unmanaged     --             
+wlp3s0             wifi      unmanaged     --
 ```
+
+*Note:*
+
+I'm using an Edimax nano USB Wifi Adapter as the second interface:
+
+```
+[ 2038.989621] usb 2-2: Product: 802.11n WLAN Adapter
+[ 2038.989625] usb 2-2: Manufacturer: Realtek
+```
+
+I cannot get hostapd to work with this interface so I usually use the Wifi
+interface of my notebook as the sharing interface.
 
 ## DKMS Driver (not sure if it works)
 
